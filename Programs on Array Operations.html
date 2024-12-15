@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs on Array Operations</title>
+    <link rel="stylesheet" href="Programs on Array Operations.css">
+</head>
+<body>
+    <header>
+        <h2>Programs on Array Operations</h2>
+    </header>
+    <main>
+        <section>
+            <h4>1. Array Traversal</h4>
+            <p>Print all elements of an array.</p>
+            <pre>
+<code>
+#include < stdio.h >
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Array elements: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+</code>
+            </pre>
+        </section>
+        <section>
+            <h4>2. Insertion into an Array</h4>
+            <p>Insert an element at a specific position.</p>
+            <pre>
+<code>
+#include < stdio.h >
+
+int main() {
+    int arr[10] = {10, 20, 30, 40, 50};
+    int n = 5;
+    int pos = 3;
+    int value = 25;
+
+    for (int i = n; i >= pos; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[pos - 1] = value;
+    n++;
+
+    printf("Array after insertion: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+
+</body>
+</html>

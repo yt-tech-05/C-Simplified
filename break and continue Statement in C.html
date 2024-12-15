@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue Statements in C</title>
+    <link rel="stylesheet" href="break and continue Statement in C.css">
+</head>
+<body>
+    <header>
+        <h1>Break and Continue Statements in C</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Break Statement</h2>
+            <p>The <code>break</code> statement is used to terminate the nearest enclosing loop or a switch statement immediately. When a <code>break</code> statement is executed, the control exits from the loop or switch, skipping any remaining iterations or cases.</p>
+        <h4>Syntax:</h4>
+            <pre><code>break;</code></pre>
+            <h3>Usage in Loops:</h3>
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+            break; // Exit the loop when i equals 3
+        }
+        printf("%d ", i);
+    }
+    return 0;
+}</code></pre>
+            <h4>Output:</h4>
+            <p>1 2</p>
+            <h3>Usage in Switch:</h3>
+            <pre><code>#include < stdio.h>
+
+int main() {
+    int choice = 2;
+    switch (choice) {
+        case 1:
+            printf("Option 1\n");
+            break;
+        case 2:
+            printf("Option 2\n");
+            break; // Exits the switch after this case
+        default:
+            printf("Default Option\n");
+    }
+    return 0;
+}</code></pre>
+            <h4>Output:</h4>
+            <p>Option 2</p>
+        </section>
+        <section>
+            <h4>2.Continue Statement</h4>
+            <p>The <code>continue</code> statement is used to skip the current iteration of the nearest enclosing loop and move to the next iteration. Unlike <code>break</code>, <code>continue</code> does not terminate the loop entirely; it just skips the remaining code in the current iteration.</p>
+            <h4>Sntax:</h4>
+            <pre><code>continue;</code></pre>
+            <h3>Usage:</h3>
+            <pre><code>#include < stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+            continue; // Skip the rest of the loop body when i equals 3
+        }
+        printf("%d ", i);
+    }
+    return 0;
+}</code></pre>
+            <h4>Output:</h4>
+            <p>1 2 4 5</p>
+        </section>
+        <section>
+            <h2>Key Differences Between Break and Continue:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Break</th>
+                        <th>Continue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Behavior</td>
+                        <td>Terminates the loop entirely.</td>
+                        <td>Skips the current iteration.</td>
+                    </tr>
+                    <tr>
+                        <td>Effect on Loops</td>
+                        <td>Stops further iterations.</td>
+                        <td>Proceeds with the next iteration.</td>
+                    </tr>
+                    <tr>
+                        <td>Scope</td>
+                        <td>Works in loops and switch.</td>
+                        <td>Works only in loops.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

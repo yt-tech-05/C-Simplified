@@ -1,0 +1,75 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #fff9f9;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    color: #000000;
+    margin-top: 1.5rem;
+}
+
+p, ul, pre {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+pre {
+    background: #f8f8f8;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    background: #f8f8f8;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+#introduction, #declaration, #access-modify, #example, #memory-layout, #functions, #use-cases {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}

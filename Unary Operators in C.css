@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+}
+
+pre {
+    background: #e8e8e8;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+

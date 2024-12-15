@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories of Functions in C</title>
+    <link rel="stylesheet" href="Category of Function.css">
+</head>
+<body>
+    <header>
+        <h1>Categories of Functions in C</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Standard Library Functions</h2>
+            <p>These are predefined functions provided by C libraries. These functions are available for use without needing to define them yourself. They are part of the C Standard Library, which includes functions for performing input and output, mathematical operations, string manipulations, memory allocations, and more.</p>
+            <h4>Some examples of standard library functions are:</h4>
+            <ul>
+                <li><strong>printf()</strong> – Used for outputting text to the console.</li>
+                <li><strong>scanf()</strong> – Used for taking input from the user.</li>
+                <li><strong>strlen()</strong> – Used to determine the length of a string.</li>
+                <li><strong>malloc()</strong> – Used for memory allocation.</li>
+                <li><strong>abs()</strong> – Returns the absolute value of an integer.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. User-Defined Functions</h2>
+            <p>These are functions that the programmer defines based on the requirements of the program. These functions allow you to break down a large program into smaller, manageable pieces, and they are usually designed to perform specific tasks.</p>
+            <h4>A user-defined function can have:</h4>
+            <ul>
+                <li><strong>Return type:</strong> The type of data the function returns (e.g., <code>int</code>, <code>float</code>, <code>void</code>).</li>
+                <li><strong>Function name:</strong> The name by which the function is called.</li>
+                <li><strong>Parameters:</strong> The inputs provided to the function.</li>
+            </ul>
+            <h4>Example of a user-defined function:</h4>
+            <pre>
+#include < stdio.h>
+// Function declaration
+int add(int a, int b);
+
+// Main function
+int main() {
+    int result = add(5, 3);
+    printf("The sum is: %d\n", result);
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+            </pre>
+        </section>
+    </main>
+
+</body>
+</html>

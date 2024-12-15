@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Operator in C</title>
+    <link rel="stylesheet" href="Conditional Operators  in C.css">
+</head>
+<body>
+    <header>
+        <h2>Conditional Operator in C</h2>
+    </header>
+    <main>
+        <section>
+            <p>The conditional operator is also known as a ternary operator.</p>
+            <p>The conditional statements are the decision-making statements which depend upon the output of the expression.</p>
+            <p>It is represented by two symbols, i.e., <strong>'?'</strong> and <strong>':'</strong>.</p>
+            <p>As the conditional operator works on three operands, it is also known as the ternary operator.</p>
+            <h4>Flowchart of Conditional Operators</h4>
+            <img src="Condition Operators.png">
+        </section>
+        <section>
+            
+            <h4>Syntax</h4>
+            <pre>
+                <img src="Syntax-of-conditional-or-ternary-operator-in-c.png">
+            </pre>
+            <h3>Meaning of the Syntax</h3>
+            <ul>
+                <li><strong>Expression1:</strong> A Boolean condition that can be either true or false.</li>
+                <li>If <strong>Expression1</strong> is true, <strong>Expression2</strong> will execute.</li>
+                <li><strong>Expression2:</strong> True when it returns a non-zero value.</li>
+                <li>If <strong>Expression1</strong> is false, <strong>Expression3</strong> will execute.</li>
+                <li><strong>Expression3:</strong> False when it returns a zero value.</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Example</h4>
+            <p><strong>C Program to Store the Greatest of Two Numbers Using the Conditional Operator:</strong></p>
+            <pre>
+#include < stdio.h>
+
+int main()
+{
+    int m = 5, n = 4;
+
+    (m > n) ? printf("m is greater than n that is %d > %d",
+                     m, n)
+            : printf("n is greater than m that is %d > %d",
+                     n, m);
+
+    return 0;
+}
+            </pre>
+        </section>
+        <section>
+            <h4>Output</h4>
+            <pre>m is greater than n that is 5 > 4</pre>
+        </section>
+    </main>
+    
+</body>
+</html>

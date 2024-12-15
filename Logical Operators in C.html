@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators in C</title>
+    <link rel="stylesheet" href="Logical Operators in C.css">
+</head>
+<body>
+    <header>
+        <h2>Logical Operators in C</h2>
+    </header>
+    <main>
+        <section>
+            <p>Logical Operators are used to combine two or more conditions.</p>
+            <p>The result of the operation of a logical operator is a Boolean value: either <strong>true</strong> or <strong>false</strong>.</p>
+       <br> <img src="Logical.webp">
+        </section><br>
+        <section class="example">
+            <h4>Example</h4>
+            <pre>
+#include  < stdio.h>
+
+int main() 
+{
+    int a = 25, b = 5;
+
+    printf("a && b : %d\n", (a > b) && (a < b));
+    printf("a || b : %d\n", (a > b) || (a < b));
+    printf("!a: %d\n", !a);
+
+    return 0;
+}
+            </pre>
+            <h3>Output:</h3>
+            <pre>
+a && b : 0
+a || b : 1
+!a: 0
+            </pre>
+        </section>
+    </main>
+    
+</html>

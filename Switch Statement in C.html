@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+    <link rel="stylesheet" href="Switch Statement in C.css">
+</head>
+<body>
+    <header>
+        <h2>Switch Statement</h2>
+    </header>
+    <main>
+        <section class="description">
+            <p>
+                A <strong>switch statement</strong> allows a variable to be tested for equality against a list of values. Each value is called a <em>case</em>, and the variable being switched on is checked for each case.
+            </p>
+        </section>
+
+        <section class="syntax">
+            <h4>Syntax of Switch Statement</h4>
+            <pre>
+<code>
+switch (variable) {
+    case value1:
+        // Statements
+        break;
+    case value2:
+        // Statements
+        break;
+    ...
+    default:
+        // Default statements
+        break;
+}
+</code>
+            </pre>
+        </section>
+
+        <section class="flowchart">
+            <h4>Flowchart of Switch Statement</h4>
+            <div >
+                <img src="Flowchart of Switch Statement.png">
+            </div>
+        </section>
+
+        <section class="example">
+            <h4>Example</h4>
+            <pre>
+<code>
+#include < stdio.h>
+void main() {
+    int day;
+    printf("Enter the day: ");
+    scanf("%d", &day);
+
+    switch (day) {
+        case 1:
+            printf("Sunday");
+            break;
+        case 2:
+            printf("Monday");
+            break;
+        case 3:
+            printf("Tuesday");
+            break;
+        case 4:
+            printf("Wednesday");
+            break;
+        case 5:
+            printf("Thursday");
+            break;
+        case 6:
+            printf("Friday");
+            break;
+        case 7:
+            printf("Saturday");
+            break;
+        default:
+            printf("Invalid day");
+            break;
+    }
+}
+</code>
+            </pre>
+        </section>
+    </main>
+   
+</body>
+</html>

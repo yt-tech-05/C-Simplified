@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arguments: Call by Value</title>
+    <link rel="stylesheet" href="Function Argument.css">
+</head>
+<body>
+    <header>
+        <h2>Function Arguments: Call by Value</h2>
+    </header>
+    <main>
+        <section>
+            <h4>What is Call by Value?</h4>
+            <p>
+                In call by value, a copy of the actual argument is passed to the function, and changes made to the parameter inside the function do not affect the original argument in the calling function.
+            </p>
+        </section>
+        <section>
+            <h4>Example of Call by Value</h4>
+            <pre>
+#include < stdio.h>
+void increment(int x) {
+    x = x + 1; 
+    printf("Inside increment: %d\n", x);
+}
+
+int main() {
+    int num = 5;
+    increment(num); 
+    printf("After increment: %d\n", num); 
+    return 0;
+}
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

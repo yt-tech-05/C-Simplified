@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types in C</title>
+    <link rel="stylesheet" href="DTIC.css">
+</head>
+<body>
+    <header>
+        <h2>Data Types in C</h2>
+    </header>
+    <main>
+        <section>
+            <p>
+                Data types specify how we enter data into our programs and what type of data we enter. 
+                C language has some predefined set of data types to handle various kinds of data that we use in our program. 
+                These data types have different storage capacities.
+            </p><br>
+            <img src="Data type.jpeg">
+        </section><br>
+        <section>
+            <h4>1. Primitive Data Types</h4>
+            <p>These are the fundamental data types in C, used to define variables that hold simple values.</p>
+            <h4>A. Integer Types (int)</h4>
+            <ul>
+                <li><strong>int</strong>: Used to store integers (whole numbers), typically 4 bytes in size.<br>
+                    Example: <code>int a = 5;</code>
+                </li>
+                <li><strong>short</strong>: A smaller integer type, typically 2 bytes.<br>
+                    Example: <code>short b = 100;</code>
+                </li>
+                <li><strong>long</strong>: A larger integer type, typically 4 or 8 bytes.<br>
+                    Example: <code>long c = 100000;</code>
+                </li>
+                <li><strong>long long</strong>: An even larger integer type, typically 8 bytes.<br>
+                    Example: <code>long long d = 123456789012345;</code>
+                </li>
+            </ul>
+            <h4>Floating-point Types</h4>
+            <ul>
+                <li><strong>float</strong>: Typically used to store floating-point numbers, with 4 bytes of memory.<br>
+                    Example: <code>float f = 3.14;</code>
+                </li>
+                <li><strong>double</strong>: A double-precision floating-point type, typically 8 bytes.<br>
+                    Example: <code>double d = 3.14159265358979;</code>
+                </li>
+                <li><strong>long double</strong>: Even more precision than double.<br>
+                    Example: <code>long double ld = 3.1415926535897932384626433832795;</code>
+                </li>
+            </ul>
+            <h4>C. Character Type</h4>
+            <ul>
+                <li><strong>char</strong>: Typically used to store a single character (1 byte).<br>
+                    Example: <code>char ch = 'A';</code>
+                </li>
+                <li><strong>signed char</strong>: Can store values between -128 to 127.</li>
+                <li><strong>unsigned char</strong>: Can store values between 0 to 255.</li>
+            </ul>
+        </section>
+        <section>
+            <h4>2. Derived Data Types</h4>
+            <ul>
+                <li><strong>Arrays</strong>: A collection of variables of the same data type.</li>
+                <li><strong>Pointers</strong>: Variables that store the address of another variable.</li>
+            </ul>
+        </section>
+        <section>
+            <h4>3. User Defined Data Types</h4>
+            <ul>
+                <li><strong>Unions (union)</strong>: Stores different data types in the same memory location but only one at a time.</li>
+                <li><strong>Enumerations (enum)</strong>: A set of named integer constants.</li>
+                <li><strong>Structures (struct)</strong>: Groups different types of variables together.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

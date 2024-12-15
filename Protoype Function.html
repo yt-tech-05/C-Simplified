@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Prototype/Declaration</title>
+    <link rel="stylesheet" href="Protoype Function.css">
+</head>
+<body>
+    <header>
+        <h2>Function Prototype/Declaration</h2>
+    </header>
+    <main>
+        <section>
+            <h4>What is a Function Prototype?</h4>
+            <p>
+                A function prototype (also called a function declaration) is a declaration of a function, informing the compiler about the function's return type, name, and the types of its arguments before the function's actual definition.
+            </p>
+        </section>
+        <section>
+            <h4>Syntax</h4>
+            <p><code>return_type function_name(parameter1_type parameter1, parameter2_type parameter2, ...);</code></p>
+        </section>
+        <section>
+            <h4>Example</h4>
+            <pre>
+int addNumbers(int a, int b); // Function prototype
+
+int main() 
+{
+    int result = addNumbers(10, 20);
+    printf("Result: %d\n", result);
+    return 0;
+}
+
+int addNumbers(int a, int b) 
+{ 
+    return a + b;
+}
+            </pre>
+        </section>
+    </main>
+</body>
+</html>

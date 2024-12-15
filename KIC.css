@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    overflow-x: auto;
+}
+
+pre > b {
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+
+pre b:contains('C Keywords') {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+pre b:contains('Keyword and there Function') {
+    color: #28a745;
+    text-decoration: underline;
+}
+
+
+pre b, pre b + span {
+    font-family: 'Times New Roman', Times, serif;
+    color: #d35400;
+}
+
+pre span {
+    font-style: italic;
+}
+
+
+pre ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+pre ul > li {
+    margin: 5px 0;
+}
+
+pre b:contains('01.') ~ span,
+pre b:contains('02.') ~ span,
+pre b:contains('03.') ~ span,
+pre b:contains('04.') ~ span,
+pre b:contains('05.') ~ span {
+    color: #2ba0c0;
+    font-weight: bold;
+}
+
+
+pre b:contains('for'),
+pre b:contains('if'),
+pre b:contains('else'),
+pre b:contains('while') {
+    color: #8e44ad;
+    font-weight: bold;
+}

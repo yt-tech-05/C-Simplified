@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Elements in Memory</title>
+    <link rel="stylesheet" href="Array Elements in Memory.css">
+</head>
+<body>
+    <header>
+        <h2>Array Element in Memory</h2>
+    </header>
+    <main>
+        <section>
+            <h4>Memory Representation of Arrays</h4>
+            <h4>Contiguous Allocation</h4>
+            <ul>
+                <li>Array elements are stored in contiguous memory locations.</li>
+                <li>The memory for the array is allocated as a single block, with each element occupying the size of the data type.</li>
+            </ul>
+            <h4>Indexing</h4>
+            <p>Array indexing starts at 0, so the address of the first element <code>arr[0]</code> is the base address of the array.</p>
+            <p>The address of any element <code>arr[i]</code> can be calculated as:</p>
+            <pre>
+<code>Address of arr[i] = Base Address + i × Size of Each Element</code>
+            </pre>
+            <h4>Pointer Representation</h4>
+            <p>The array name (<code>arr</code>) itself acts as a pointer to the first element (<code>&amp;arr[0]</code>).</p>
+        </section>
+
+        <section>
+            <h4>Example: Storing an Integer Array in Memory</h4>
+            <pre>
+<code>
+#include  < stdio.h>
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50}; // Declare and initialize an array
+
+    // Print the addresses and values of each element
+    printf("Element\tValue\tAddress\n");
+    for (int i = 0; i < 5; i++) {
+        printf("arr[%d]\t%d\t%p\n", i, arr[i], (void*)&arr[i]);
+    }
+
+    return 0;
+}
+</code>
+            </pre>
+            <h3>Output:</h3>
+            <pre>
+Element   Value   Address
+arr[0]    10      0x7ffee4a2f000
+arr[1]    20      0x7ffee4a2f004
+arr[2]    30      0x7ffee4a2f008
+arr[3]    40      0x7ffee4a2f00c
+arr[4]    50      0x7ffee4a2f010
+            </pre>
+        </section>
+
+        <section>
+            <h4>Array Address Calculations</h4>
+            <ul>
+                <li><strong>Base Address:</strong> The starting address of the array, which is the address of the first element (<code>&amp;arr[0]</code>).</li>
+                <li><strong>Address of arr[i]:</strong> 
+                    <pre><code>Address of arr[i] = Base Address + i × sizeof(data_type)</code></pre>
+                </li>
+            </ul>
+            <p>For example, if <code>arr[0]</code> is at <code>0x1000</code> and <code>sizeof(int) = 4</code>, then:</p>
+            <ul>
+                <li><code>arr[1]</code> is at <code>0x1004</code></li>
+                <li><code>arr[2]</code> is at <code>0x1008</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Pointer Arithmetic in Arrays</h4>
+            <pre>
+<code>
+#include  < stdio.h>
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    int *ptr = arr; // Pointer to the first element of the array
+
+    // Access elements using pointer arithmetic
+    for (int i = 0; i < 5; i++) {
+        printf("Value at ptr + %d: %d (Address: %p)\n", i, *(ptr + i), (void*)(ptr + i));
+    }
+
+    return 0;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h4>Multidimensional Arrays in Memory</h4>
+            <p>In C, multidimensional arrays are stored in contiguous memory locations, in row-major order.</p>
+            <pre>
+<code>
+#include < stdio.h>
+
+int main() {
+    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+    // Print the address of each element
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("arr[%d][%d] = %d (Address: %p)\n", i, j, arr[i][j], (void*)&arr[i][j]);
+        }
+    }
+
+    return 0;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h4>Key Points</h4>
+            <ul>
+                <li>Contiguous Memory: Array elements are stored in contiguous locations.</li>
+                <li>Address Calculation: Use the formula <code>Base Address + i × Size</code>.</li>
+                <li>Pointer Arithmetic: Simplifies traversing arrays.</li>
+                <li>Multidimensional Arrays: Stored row-by-row in contiguous memory.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5f9;
+    color: #222;
+}
+
+h2, h4 {
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #5dade2;
+    padding-bottom: 8px;
+}
+
+pre {
+    background-color: #d6eaf8;
+    padding: 20px;
+    border: 1px solid #aed6f1;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #5dade2;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f6f7;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ebf5fb;
+}
+
+td, th {
+    padding: 12px;
+    border: 1px solid #d6dbdf;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Image Styling */
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #5dade2;
+    border-radius: 8px;
+}
+
+/* Specific Styling */
+pre b {
+    color: #1a5276;
+    font-weight: bold;
+}
+
+pre br {
+    display: block;
+    margin-bottom: 10px;
+    content: '';
+}
+
+/* Flowchart Symbols Table */
+table th, table td {
+    text-align: center;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+/* Highlighting Algorithm List */
+pre ul, pre ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a5276;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}

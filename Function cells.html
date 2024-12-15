@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Calls and Categories of Functions</title>
+    <link rel="stylesheet" href="Function cells.css">
+</head>
+<body>
+    <header>
+        <h2>Function Calls and Categories of Functions</h2>
+    </header>
+    <main>
+        <section>
+            <h4>What is a Function Call?</h4>
+            <p>
+                A function call is where the function is invoked in the program, typically from the <code>main()</code> function or another function. 
+                The arguments passed during the call are sent to the function as its parameters.
+            </p>
+        </section>
+        <section>
+            <h4>Syntax</h4>
+            <p><code>function_name(argument1, argument2, ...);</code></p>
+        </section>
+        <section>
+            <h4>Example</h4>
+            <pre>
+int addNumbers(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int sum = addNumbers(5, 3); // Function call
+    printf("Sum: %d\n", sum);
+    return 0;
+}
+            </pre>
+        </section>
+        <section>
+            <h4>Category of Functions</h4>
+            <p>There are generally two categories of functions in C:</p>
+            <ul>
+                <li><strong>Standard Library Functions:</strong> Functions provided by C libraries (e.g., <code>printf</code>, <code>scanf</code>, <code>strlen</code>, etc.).</li>
+                <li><strong>User-Defined Functions:</strong> Functions defined by the programmer for specific tasks.</li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>

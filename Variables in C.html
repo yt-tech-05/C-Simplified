@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link rel="stylesheet"  href="VIC.css">
+</head>
+<body>
+    <h2>Variables</h2>
+    <pre>
+•	A variable is data name that may be used to store a data value.
+–	Variable names correspond to locations in the computer's memory
+–	Every variable has a name, a type, a size and a value
+–	Whenever a new value is placed into a variable, it replaces (and destroys) the previous value
+–	Reading variables from memory does not change them
+
+<b>Key Concepts of Variables in C:</b><br>
+1<b>.Declaration</b><br>
+o	Before using a variable, you must declare it by specifying its type and giving it a name.
+o	Syntax: type variable_name;
+
+2.<b>Data Types: C has several data types, and the type of a variable determines the kind of value it can store.
+    Common data types in C:</b><br>
+o	int: Integer type, stores whole numbers (e.g., int a = 5;)
+o	float: Floating-point type, stores numbers with decimal points (e.g., float b = 3.14;)
+o	double: Double precision floating-point type, for larger or more precise floating-point numbers (e.g., double pi = 3.14159;)
+o	char: Character type, stores individual characters (e.g., char c = 'A';)
+        You can also use other types like long, short, unsigned, and long long to
+        modify the size and range of variables.
+
+3.<b>Initialization: A variable can be initialized (assigned an initial value) when it is declared.</b><br>
+o	Syntax: type variable_name = initial_value; char grade = 'A';      // 'grade' is initialized to 'A'</b>
+
+4.<b>Variable Naming Rules:</b><br>
+o	Variable names must begin with a letter (a-z, A-Z) or an underscore (_).
+o	After the first character, you can use letters, digits (0-9), or underscores.
+o	Variable names are case-sensitive (age and Age are different).
+o	A variable name cannot be a C keyword (e.g., int, return, if).
+
+5.<b>Scope and Lifetime of Variables:</b><br>
+o	The scope of a variable refers to the region of code where the variable can be accessed.
+o	The lifetime refers to how long the variable exists in memory.
+        There are different types of variables based on scope:
+o	Local variables: Declared inside a function and accessible only within that function.
+o	Global variables: Declared outside of any function, and accessible by any function in the program.
+o	Static variables: Retain their value between function calls.
+o	Dynamic variables: Variables that are created and managed at runtime using functions like malloc.
+
+6.<b>Example Program: Here's a simple program that declares, initializes, and uses variables:</b><br>
+   #include < stdio.h>
+ 
+   int main(){
+      int a = 5;        
+            float b = 4.5;   
+         char c = 'X';     
+
+            printf("Integer value: %d\n", a);                    
+            printf("Float value: %.2f\n", b);
+                  printf("Character value: %c\n", c);
+
+    return 0;
+}
+Output:
+Integer value: 5
+Float value: 4.50
+Character value: X
+Variable Types in Detail:
+•	Integer Types:
+o	int: A standard integer.
+o	short: A short integer, typically smaller in size than int.
+o	long: A long integer, typically larger in size than int.
+o	long long: An extended size integer.
+o	unsigned int, unsigned short, etc.: Unsigned versions of integer types (no negative values).
+•	Floating-Point Types:
+o	float: Single precision floating-point type.
+o	double: Double precision floating-point type.
+o	long double: Extended precision floating-point type.
+•	Character Type:
+o	char: Stores a single character.
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational Operators in C</title>
+    <link rel="stylesheet" href="Relational Operators in C.css">
+</head>
+<body>
+    <header>
+        <h2>Relational Operators in C</h2>
+    </header>
+    <main>
+        <section>
+            <h4>What are Relational Operators?</h4>
+            <p>A relational operator checks the relationship between two operands. If the relation is true, it returns <code>1</code>; if false, it returns <code>0</code>. Relational operators are often used in decision-making and loops.</p>
+        <img src="C-Relational-Operators.webp">
+        </section>
+        <section>
+            <h4>Example Code</h4>
+            <pre>
+#include < stdio.h>
+
+int main() {
+   int a = 10, b = 4;
+
+   if (a > b)
+       printf("a is greater than b\\n");
+   else
+       printf("a is less than or equal to b\\n");
+
+   if (a >= b)
+       printf("a is greater than or equal to b\\n");
+   else
+       printf("a is lesser than b\\n");
+
+   if (a < b)
+       printf("a is less than b\\n");
+   else
+       printf("a is greater than or equal to b\\n");
+
+   if (a <= b)
+       printf("a is lesser than or equal to b\\n");
+   else
+       printf("a is greater than b\\n");
+
+   if (a == b)
+       printf("a is equal to b\\n");
+   else
+       printf("a and b are not equal\\n");
+
+   if (a != b)
+       printf("a is not equal to b\\n");
+   else
+       printf("a is equal to b\\n");
+
+   return 0;
+}
+            </pre>
+        </section>
+        <section>
+            <h4>Output</h4>
+            <pre>
+a is greater than b
+a is greater than or equal to b
+a is greater than or equal to b
+a is greater than b
+a and b are not equal
+a is not equal to b
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

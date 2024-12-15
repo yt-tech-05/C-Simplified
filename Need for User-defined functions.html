@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Defined Functions</title>
+    <link rel="stylesheet" href="Need for User-defined functions.css">
+</head>
+<body>
+    <header>
+        <h2>User-Defined Functions</h2>
+    </header>
+    <main>
+        <section>
+            <h4>Why User-Defined Functions are Crucial</h4>
+            <ol>
+                <li><strong>Code Reusability:</strong> You can define a function once and call it whenever required, which reduces redundancy.</li>
+                <li><strong>Modularity:</strong> Breaking a large program into smaller, manageable functions makes the code easier to understand, debug, and maintain.</li>
+                <li><strong>Organization:</strong> Functions help organize the code logically into discrete blocks, each handling a specific task.</li>
+                <li><strong>Maintainability:</strong> If a function has a bug, you can fix it in one place, instead of having to modify multiple places in the code.</li>
+            </ol>
+        </section>
+        <section>
+            <h4>Example</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int add(int a, int b);
+
+int main() 
+{
+    int result = add(3, 4);      
+    printf("The result is: %d\n", result);
+    return 0;
+}
+
+int add(int a, int b) 
+{
+    return a + b;  
+}
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

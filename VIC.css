@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #ddd;
+}
+
+pre {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    color: #444;
+    overflow-x: auto;
+}
+
+pre > b {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+pre b:contains('Key Concepts of Variables in C:') {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+pre b:contains('Example Program:') {
+    color: #28a745;
+    text-decoration: underline;
+}
+
+pre code {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eaf1f5;
+    color: #2d3436;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccd;
+    margin: 10px 0;
+}
+
+pre span.inline-code {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    color: #d35400;
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+pre ul {
+    list-style: circle;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+pre ul > li {
+    margin: 5px 0;
+}
+
+pre b:contains('Data Types:'),
+pre b:contains('Variable Types in Detail:') {
+    color: #e74c3c;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+pre code:contains('#include') {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+pre code:contains('int'), 
+pre code:contains('float'),
+pre code:contains('char') {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+pre code:contains('printf') {
+    color: #16a085;
+    font-weight: bold;
+}

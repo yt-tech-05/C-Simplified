@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #6200ea;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2, h4{
+    color: #020202;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+code {
+    color: #d63384;
+    font-family: Consolas, 'Times New Roman', Times, serif;
+}
+
+ul {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: disc inside;
+}
+
+li {
+    margin: 0.5rem 0;
+}

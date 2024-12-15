@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Dimensional Arrays in C</title>
+    <link rel="stylesheet" href="1-Dimensional Arrays.css">
+</head>
+<body>
+    <header>
+        <h2>1-Dimensional Arrays in C</h2>
+    </header>
+    <main>
+        <section>
+            <h4>Introduction</h4>
+            <p>
+                A 1-dimensional array is a collection of elements stored in a contiguous memory block, where all elements are of the same data type. 
+                It allows you to store and access a sequence of values using a single index.
+            </p>
+        </section>
+        <section>
+            <h4>Declaration and Initialization</h4>
+            <p><strong>Declaration:</strong></p>
+            <pre>
+data_type array_name[size];
+            </pre>
+            <ul>
+                <li><strong>data_type:</strong> Type of elements in the array (e.g., int, float, char).</li>
+                <li><strong>array_name:</strong> Name of the array.</li>
+                <li><strong>size:</strong> Number of elements the array can hold (must be a constant value or defined size).</li>
+            </ul>
+            <p>Examples:</p>
+            <pre>
+int numbers[5]; // Array to store 5 integers
+
+int numbers[5] = {1, 2, 3, 4, 5}; // Initializes the array with specific values
+
+int numbers[] = {1, 2, 3, 4, 5}; // Size automatically set to 5
+            </pre>
+        </section>
+        <section>
+            <h4>Accessing and Iterating Elements</h4>
+            <p>Accessing array elements:</p>
+            <pre>
+numbers[0] = 10;  // Assigns 10 to the first element
+int x = numbers[2]; // Retrieves the third element
+            </pre>
+            <p>Iterating through a 1-D array:</p>
+            <pre>
+#include  < stdio.h>
+
+int main() {
+    int numbers[5] = {10, 20, 30, 40, 50};
+
+    for (int i = 0; i < 5; i++) {
+        printf("numbers[%d] = %d\n", i, numbers[i]);
+    }
+
+    return 0;
+}
+            </pre>
+            <p>Output:</p>
+            <pre>
+numbers[0] = 10
+numbers[1] = 20
+numbers[2] = 30
+numbers[3] = 40
+numbers[4] = 50
+            </pre>
+        </section>
+        <section>
+            <h4>Characteristics</h4>
+            <ul>
+                <li>Fixed Size: Once declared, the size of an array cannot be changed.</li>
+                <li>Contiguous Memory: Elements are stored in consecutive memory locations.</li>
+                <li>Efficient Access: Index-based access allows for fast retrieval and modification.</li>
+                <li>Default Values: Globally declared arrays are initialized to 0. Locally declared arrays have undefined values unless explicitly initialized.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Storing a list of values (e.g., marks, temperatures, etc.).</li>
+                <li>Simple data structures like queues and stacks.</li>
+                <li>Iterative computation over a collection of items.</li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>

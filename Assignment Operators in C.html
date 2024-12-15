@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators in C</title>
+    <link rel="stylesheet" href="Assignment Operators in C.css">
+</head>
+<body>
+    <header>
+        <h2>Assignment Operators in C</h4>
+        <p>An assignment operator is used for assigning a value to a variable. The most common assignment operator is “=”.</p>
+    </header>
+
+    <section>
+        <h4>Operator Table</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Symbol</th>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Syntax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>=</td>
+                    <td>Simple Assignment</td>
+                    <td>Assign the value of the right operand to the left operand.</td>
+                    <td>a = b</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>+=</td>
+                    <td>Plus and assign</td>
+                    <td>Add the right operand and left operand and assign this value to the left operand.</td>
+                    <td>a += b</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>-=</td>
+                    <td>Minus and assign</td>
+                    <td>Subtract the right operand and left operand and assign this value to the left operand.</td>
+                    <td>a -= b</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>*=</td>
+                    <td>Multiply and assign</td>
+                    <td>Multiply the right operand and left operand and assign this value to the left operand.</td>
+                    <td>a *= b</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>/=</td>
+                    <td>Divide and assign</td>
+                    <td>Divide the left operand with the right operand and assign the result to the left operand.</td>
+                    <td>a /= b</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>%=</td>
+                    <td>Modulus and assign</td>
+                    <td>Assign the remainder in the division of the left operand with the right operand to the left operand.</td>
+                    <td>a %= b</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Example</h2>
+        <pre>
+int main() {
+    int a = 25, b = 5;
+
+    printf("a = b: %d\n", a = b);
+    printf("a += b: %d\n", a += b);
+    printf("a -= b: %d\n", a -= b);
+    printf("a *= b: %d\n", a *= b);
+    printf("a /= b: %d\n", a /= b);
+    printf("a %%= b: %d\n", a %= b);
+    return 0;
+        </pre>
+    </section>
+
+    <section>
+        <h2>Output</h2>
+        <pre>
+a = b : 5
+a + b =  10
+a – b = 5
+a * b = 25
+a / b = 5
+a % b = 0
+        </pre>
+    </section>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Else If Ladder</title>
+    <link rel="stylesheet" href="C Else if ladder Statement.css">
+</head>
+<body>
+    <header>
+        <h2>C Else If Ladder</h2>
+    </header>
+    <main>
+        <section class="introduction">
+            <p>
+                Writing an <code>if</code> statement inside the <code>else</code> block of another <code>if</code> statement is called an <strong>if-else-if statement</strong> or an <strong>else-if ladder</strong>.
+            </p>
+        </section>
+
+        <section class="flowchart">
+            <h4>Flowchart of Else If Ladder</h4>
+           <div>
+                <img src="Flowchart of Else If Ladder.png">
+            </div>
+        </section>
+
+        <section class="syntax">
+            <h4>Syntax of Else If Ladder</h4>
+            <pre>
+<code>
+if (condition) {
+    ...
+} else if (condition) {
+    ...
+} else if (condition) {
+    ...
+} else {
+    ...
+}
+</code>
+            </pre>
+        </section>
+
+        <section class="example">
+            <h4>Example</h4>
+            <pre>
+<code>
+#include < stdio.h>
+
+void main() {
+    int number = 0;
+
+    if (number > 0) {
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+}
+</code>
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

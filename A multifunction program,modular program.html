@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Multifunction Program,Modular/Multifunction Program</title>
+    <link rel="stylesheet" href="A multifunction program,modular program.css">
+</head>
+<body>
+    <header>
+        <h2>Modular/Multifunction Program</h2>
+    </header>
+    <main>
+        <section>
+            <h4>What is a Modular/Multifunction Program?</h4>
+            <p>
+                A modular or multifunction program is one that is divided into several smaller, self-contained functions.
+                Each function performs a specific task, making the entire program easier to understand, maintain, and debug.
+            </p>
+        </section>
+        <section>
+            <h2>Example: Modular Program for Calculating Area of Different Shapes</h2>
+            <pre>
+#include < stdio.h>
+float area_of_circle(float radius) {
+    return 3.14 * radius * radius;
+}
+float area_of_rectangle(float length, float width) {
+    return length * width;
+}
+int main() 
+{
+    float radius = 5.0, length = 10.0, width = 4.0;
+    printf("Area of circle: %.2f\n", area_of_circle(radius));
+    printf("Area of rectangle: %.2f\n", area_of_rectangle(length, width));
+    return 0;
+}
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

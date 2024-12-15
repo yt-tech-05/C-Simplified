@@ -1,0 +1,45 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    overflow-x: auto;
+}
+pre > b {
+    color: #2c3e50;
+}
+
+pre > ul, pre > ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+pre > ul > li, pre > ol > li {
+    margin: 5px 0;
+}
+
+pre b:contains('Examples of Valid Identifiers') {
+    color: #27ae60;
+}
+
+pre b:contains('Examples of Invalid Identifiers') {
+    color: #e74c3c;
+}

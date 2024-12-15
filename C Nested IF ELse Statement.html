@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Nested If Else Statement</title>
+    <link rel="stylesheet" href="C Nested IF ELse Statement.css">
+</head>
+<body>
+    <header>
+        <h2>C Nested If Else Statement</h2>
+    </header>
+    <main>
+        <section class="description">
+            <p>
+                Writing an <code>if</code> or <code>else</code> statement inside another <code>if</code> or <code>else</code> statement is called a <strong>Nested If Else Statement</strong>.
+            </p>
+        </section>
+
+        <section class="syntax">
+            <h4>Syntax of Nested If Else Statement</h4>
+            <pre>
+<code>
+if (condition1) {
+    // Executes when condition1 is true
+    if (condition2) {
+        // Statement 1
+    } else {
+        // Statement 2
+    }
+} else {
+    if (condition3) {
+        // Statement 3
+    } else {
+        // Statement 4
+    }
+}
+</code>
+            </pre>
+        </section>
+
+        <section class="flowchart">
+            <h4>Flowchart of Nested If Else Statement</h4>
+            <img src="Flowchart of Nested If Else Statement.jpeg">
+        </section>
+
+        <section class="example">
+            <h2>Example</h2>
+            <pre>
+<code>
+#include < stdio.h>
+
+void main() {
+    int number = 15;
+    if (number > 0) {
+        if (number > 10) {
+            printf("The number is greater than 10.\n");
+        } else {
+            printf("The number is positive but less than or equal to 10.\n");
+        }
+    } else {
+        printf("The number is zero or negative.\n");
+    }
+}
+</code>
+            </pre>
+        </section>
+    </main>
+    
+</body>
+</html>

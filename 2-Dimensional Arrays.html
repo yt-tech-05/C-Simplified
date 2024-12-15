@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Dimensional Arrays in C</title>
+    <link rel="stylesheet" href="2-Dimensional Arrays.css">
+</head>
+<body>
+    <header>
+        <h2>2-Dimensional Arrays in C</h2>
+    </header>
+    <main>
+        <section id="introduction">
+            <h4>Introduction</h4>
+            <p>A 2-dimensional array in C is an array of arrays, often used to represent matrices or grids. It stores elements in a tabular format, organized into rows and columns.</p>
+        </section>
+
+        <section id="declaration">
+            <h4>Declaration and Initialization of 2-Dimensional Array</h4>
+            <h4>Declaration</h4>
+            <p><code>data_type array_name[rows][columns];</code></p>
+            <ul>
+                <li><b>data_type:</b> Type of elements in the array (e.g., int, float, char).</li>
+                <li><b>rows:</b> Number of rows in the array.</li>
+                <li><b>columns:</b> Number of columns in the array.</li>
+            </ul>
+            <h4>Examples</h4>
+            <ul>
+                <li>Declaration without initialization: <code>int matrix[3][4];</code></li>
+                <li>Declaration with partial initialization:
+                    <pre>
+int matrix[3][4] = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12}
+};
+                    </pre>
+                </li>
+                <li>Compiler infers dimensions for partial initialization:
+                    <pre>
+int matrix[][4] = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8}
+};
+                    </pre>
+                </li>
+            </ul>
+        </section>
+
+        <section id="access-modify">
+            <h4>Accessing and Modifying Elements</h4>
+            <p>2-D array elements are accessed using two indices:</p>
+            <ul>
+                <li>The first index specifies the row.</li>
+                <li>The second index specifies the column.</li>
+            </ul>
+            <pre>
+matrix[row][column] = value; // Assigns a value to the element
+int x = matrix[1][2];        // Retrieves the element at row 1, column 2
+            </pre>
+        </section>
+
+        <section id="example">
+            <h4>Example: Iterating Through a 2-D Array</h4>
+            <pre>
+#include < stdio.h>
+
+int main() {
+    int matrix[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6}
+    };
+
+    // Printing the 2-D array
+    for (int i = 0; i < 2; i++) {           // Iterate through rows
+        for (int j = 0; j < 3; j++) {       // Iterate through columns
+            printf("matrix[%d][%d] = %d\n", i, j, matrix[i][j]);
+        }
+    }
+
+    return 0;
+}
+            </pre>
+            <p><b>Output:</b></p>
+            <pre>
+matrix[0][0] = 1
+matrix[0][1] = 2
+matrix[0][2] = 3
+matrix[1][0] = 4
+matrix[1][1] = 5
+matrix[1][2] = 6
+            </pre>
+        </section>
+
+        <section id="memory-layout">
+            <h4>Memory Layout</h4>
+            <p>In C, 2-D arrays are stored in row-major order, meaning that elements in the same row are stored in contiguous memory locations.</p>
+            <pre>
+int matrix[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+            </pre>
+            <p>Stored in memory as:</p>
+            <pre>1, 2, 3, 4, 5, 6</pre>
+        </section>
+
+        <section id="functions">
+            <h4>Passing 2-D Arrays to Functions</h4>
+            <p>When passing a 2-D array to a function, the number of columns must be specified, but the number of rows is optional.</p>
+            <pre>
+#include  < stdio.h>
+
+void printMatrix(int rows, int cols, int matrix[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int matrix[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6}
+    };
+
+    printMatrix(2, 3, matrix); // Pass the array to the function
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section id="use-cases">
+            <h4>Common Use Cases</h4>
+            <ul>
+                <li><b>Matrices:</b> Mathematical computations involving matrices.</li>
+                <li><b>Grids:</b> Representing games like tic-tac-toe, chess boards, etc.</li>
+                <li><b>Tables:</b> Storing tabular data such as student scores or sales data.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
